@@ -1,0 +1,306 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 204px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #D8DCDE ;
+border-right: 2px solid #000000;
+  overflow-x: hidden;
+  padding-top: 10px;
+  margin-bottom: 150px;
+}
+
+.sidenav a {
+  padding: 6px 8px 10px 20px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #0c1a64;
+font-weight: 500;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #375260;
+}
+
+footer {
+	
+	margin-left: 20px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  text-align: center;
+	font-family: "Lato", sans-serif;
+	
+}
+
+hr {
+	width: 100%;
+}
+
+
+.main {
+  margin-left: 195px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+nav {
+    background-color: #9bacb4;
+    height: 100px;
+    top: 0;
+    width: 90%;
+    overflow: auto;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    justify-content: space-between; /* Align items to left and right */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #375260;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+nav ul li a.active {
+    background-color: #D8DCDE;
+    color: #375260;
+}
+
+.nav-center a {
+    display: flex;
+	color: #0c1a64;
+	font-weight: 600;
+	font-size: 22px;
+	font-style: italic;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 15px;
+    margin-left: auto; /* Pushes the .nav-center container to the right */
+    margin-right: auto; /* Pushes the .nav-center container to the left */
+    flex: 1; /* Allow .nav-center to take up remaining space */
+}
+
+nav ul li a.logout {
+    color: red; /* Set default color to red */
+    text-decoration: none;
+	font-weight: 600;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+nav ul li a.logout:hover {
+    color: white; /* Change color to white on hover */
+}
+
+.staff-info {
+    display:flex;
+    align-items:center;
+	margin-left: 95px;
+}
+
+.staff-info a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    margin-right: 0.2rem;
+}
+
+.content {
+    padding-top: 30px; /* Adjust as per your navigation bar height */
+}
+
+.search-box{
+	width: 600px;
+	background: #1690A7;
+	margin: 100px auto 0 ;
+	border-radius: 5px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+input{
+	flex:1;
+	height: 50px;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+button{
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+button .fa-solid{
+	width: 25px;
+	color: #555;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+::placeholder{
+	color: #555;
+}
+
+.modal-header{
+    background: #0d6efd;
+    color: #fff;
+}
+
+.modal-body form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.modal-body form .imgholder{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imgholder .upload{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload i{
+    color: #fff;
+    font-size: 35px;
+}
+
+.imgholder:hover .upload{
+    display: flex;
+}
+
+.imgholder .upload input{
+    display: none;
+}
+
+.modal-body form .inputField{
+    flex-basis: 68%;
+    border-left: 5px groove blue;
+    padding-left: 20px;
+}
+
+form .inputField > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form .inputField > div label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#userForm form .inputField > div label::after{
+    content: "*";
+    color: red;
+}
+
+form .inputField > div input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid blue;
+}
+
+.modal-footer .submit{
+    font-size: 18px;
+}
+
+
+#readData form .inputField > div input{
+    color: #000;
+    font-size: 18px;
+}
+
+.ready-to-collect {
+    background-color: lightgreen;
+}
+
+.unclaimed {
+    color: red;
+}
+
+
+.edit-box {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 50px; 
+	margin-left: 30px;
+	width: 70%;
+}
+
+.account-box h3, .password-box h4, .add-staff-box h4 {
+    margin-top: 0;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printableArea, #printableArea * {
+    visibility: visible;
+  }
+  #printableArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+
